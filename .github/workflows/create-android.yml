@@ -29,10 +29,10 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: 19.x
+          node-version: 20.x
 
       - name: install dependencies
-        run: npm ci
+        run: npm i
 
       - name: Create Build Folder
         run: npm run build
